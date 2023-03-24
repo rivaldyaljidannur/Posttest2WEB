@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Daftar.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="wrapper">
+            <div class="brand">
+                <div class="firstname">StudyClub</div>
+                <div class="lastname">Bengkuring</div>
+            </div>
+            <ul class="navigation">
+                <li><a href="index.html">Logout</a></li>
+                <li><a href="Beranda.html">Beranda</a></li>
+                <li><a href="Profile.html" class="aktif">Profil</a></li>
+                <li><a href="Lokasi.html">Lokasi</a></li>
+                <li><a href="Daftar.html">Daftar</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Formulir Pendaftaran</h1>
+    <form>
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan alamat email" required>
+
+      <label for="bidang">Pilih Bidang</label>
+      <input type="checkbox" id="bidang" name="checkbox" value="Web Developer">Web Developer <br>
+      <input type="checkbox" id="bidang" name="checkbox" value="UI/UX Design">UI/UX Design <br>
+      <input type="checkbox" id="bidang" name="checkbox" value="Cyber Security">Cyber Security <br>
+      <br>
+      <br>
+      <label for="alamat">Alamat:</label>
+      <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat" required>
+      
+      <br>
+      <label for="radio">Pendidikan Terakhir:</label><br> 
+      <input type="radio"  name="radio" value="SMK">SMK <br>
+      <input type="radio" name="radio" value="SMA">SMA <br>
+      <br>
+      <a class="btn" onclick="simpan()" href="form.html">Submit</a>
+
+<script src="../js/daftar.js"></script>
+</body>
+</html>
