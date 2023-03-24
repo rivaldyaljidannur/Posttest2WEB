@@ -1,10 +1,12 @@
 form()
 function form(){
-    const nama = JSON.parse(sessionStorage.getItem("nama")) || [];
-    const email = JSON.parse(sessionStorage.getItem("email")) || [];
-    const checkbox = JSON.parse(sessionStorage.getItem("checkbox")) || [];
-    const alamat = JSON.parse(sessionStorage.getItem("alamat")) || [];
-    const radio = JSON.parse(sessionStorage.getItem("radio")) || [];
+    let data = sessionStorage.getItem("data");
+    data = JSON.parse(data);
+    const nama = data['nama'];
+    const email = data['email'];
+    const checkbox = data['checkbox'];
+    const alamat = data['alamat'];
+    const radio = data['radio'];
     
     const userInputNama = document.getElementById('nama_form');
     const userInputEmail = document.getElementById('email_form');

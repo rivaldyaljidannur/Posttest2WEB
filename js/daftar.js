@@ -11,30 +11,24 @@ function simpan(){
     
     
     
-    const nama = JSON.parse(sessionStorage.getItem("nama")) || [];
-    const email = JSON.parse(sessionStorage.getItem("email")) || [];
-    const checkbox = JSON.parse(sessionStorage.getItem("checkbox")) || [];
-    const alamat = JSON.parse(sessionStorage.getItem("alamat")) || [];
-    const radio = JSON.parse(sessionStorage.getItem("radio")) || [];
-
-   
+    let nama = sessionStorage.getItem("nama");
+    let email = sessionStorage.getItem("email");
+    let checkbox = sessionStorage.getItem("checkbox") || [];
+    let alamat = sessionStorage.getItem("alamat");
+    let radio = sessionStorage.getItem("radio");
 
       // push 
-      nama.push(userInputNama.value);
-      sessionStorage.setItem("nama", JSON.stringify(nama))
+      nama = userInputNama.value || nama;
       
      
-      email.push(userInputEmail.value);
-      sessionStorage.setItem("email", JSON.stringify(email))
+      email = userInputEmail.value || email;
       
      
-      alamat.push(userInputAlamat.value);
-      sessionStorage.setItem("alamat", JSON.stringify(alamat))
+      alamat = userInputAlamat.value || alamat;
       
       
     
-      radio.push(userInputRadio.value);
-      sessionStorage.setItem("radio", JSON.stringify(radio))
+      radio = userInputRadio.value || radio;
       
         
       for (var i=0; i<userInputCheckbox.length; i++) {
@@ -42,5 +36,14 @@ function simpan(){
               checkbox.push(userInputCheckbox[i].value);
           }
       }
-      sessionStorage.setItem("checkbox", JSON.stringify(checkbox));
+
+      let data ={
+        'nama': nama,
+        'email': email,
+        'checkbox' : checkbox,
+        'alamat' : alamat,
+        'radio' : radio
+       }
+
+       sessionStorage.setItem("data", JSON.stringify(data));
 }
