@@ -21,5 +21,6 @@ Simpan data akun ke dalam local storage
 Input data form , simpan data ke sesion storage dan tampilkan result form nya setelah di isi
 ![image](https://user-images.githubusercontent.com/120232605/227550227-5c856c29-52e5-42c4-b288-fa8967be2fa0.png)
 ![image](https://user-images.githubusercontent.com/120232605/227550483-1616e684-fbb8-433e-918e-234952062e0a.png)
-![image](https://user-images.githubusercontent.com/120232605/227550904-a3c96be1-dda5-4f19-959d-9e159866c77c.png)
+![image](https://user-images.githubusercontent.com/120232605/227728306-d0607f3a-5d5f-4223-9f11-8849c2f45b38.png)
+
 
