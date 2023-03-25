@@ -38,11 +38,11 @@ function simpan(){
       }
 
       let data ={
-        'nama': nama,
-        'email': email,
-        'checkbox' : checkbox,
-        'alamat' : alamat,
-        'radio' : radio
+        'Nama': nama,
+        'Email': email,
+        'Pilih Bidang' : checkbox,
+        'Alamat' : alamat,
+        'Pendidikan Terakhir' : radio
        }
 
        sessionStorage.setItem("data", JSON.stringify(data));

@@ -2,11 +2,11 @@ form()
 function form(){
     let data = sessionStorage.getItem("data");
     data = JSON.parse(data);
-    const nama = data['nama'];
-    const email = data['email'];
-    const checkbox = data['checkbox'];
-    const alamat = data['alamat'];
-    const radio = data['radio'];
+    const nama = data['Nama'];
+    const email = data['Email'];
+    const checkbox = data['Pilih Bidang'];
+    const alamat = data['Alamat'];
+    const radio = data['Pendidikan Terakhir'];
     
     const userInputNama = document.getElementById('nama_form');
     const userInputEmail = document.getElementById('email_form');

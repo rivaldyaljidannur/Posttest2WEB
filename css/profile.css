@@ -105,4 +105,10 @@ footer {
 footer p {
     color: #666;
     font-size: 14px;
-  }
+}
+h2 {
+    font-weight: 700;
+    color: rgb(0, 0, 104);
+    padding-top: 10px;
+    padding-right: 100px;
+}

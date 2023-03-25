@@ -15,11 +15,12 @@
                 <div class="lastname">Bengkuring</div>
             </div>
             <ul class="navigation">
+                <h2>Welcome <span id='hello'></span></h2> 
                 <li><a href="index.html">Logout</a></li>
                 <li><a href="Beranda.html">Beranda</a></li>
-                <li><a href="Profile.html" class="aktif">Profil</a></li>
+                <li><a href="Profile.html">Profil</a></li>
                 <li><a href="Lokasi.html">Lokasi</a></li>
-                <li><a href="Daftar.html">Daftar</a></li>
+                <li><a href="Daftar.html" class="aktif">Daftar</a></li>
             </ul>
         </nav>
     </div>
@@ -32,9 +33,13 @@
       <input type="email" id="email" name="email" placeholder="Masukkan alamat email" required>
 
       <label for="bidang">Pilih Bidang</label>
-      <input type="checkbox" id="bidang" name="checkbox" value="Web Developer">Web Developer <br>
-      <input type="checkbox" id="bidang" name="checkbox" value="UI/UX Design">UI/UX Design <br>
-      <input type="checkbox" id="bidang" name="checkbox" value="Cyber Security">Cyber Security <br>
+      <br>
+      <input type="checkbox" id="bidang" name="checkbox" value="Web Developer">Web Developer 
+      <br>
+      <input type="checkbox" id="bidang" name="checkbox" value="UI/UX Design">UI/UX Design 
+      <br>
+      <input type="checkbox" id="bidang" name="checkbox" value="Cyber Security">Cyber Security 
+      
       <br>
       <br>
       <label for="alamat">Alamat:</label>
@@ -48,5 +53,6 @@
       <a class="btn" onclick="simpan()" href="form.html">Submit</a>
 
 <script src="../js/daftar.js"></script>
+<script src="../js/beranda.js"></script>
 </body>
 </html>

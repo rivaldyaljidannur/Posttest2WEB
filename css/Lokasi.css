@@ -98,3 +98,9 @@ body{
     margin: auto;
     text-align: center;
 }
+h2 {
+    font-weight: 700;
+    color: rgb(0, 0, 104);
+    padding-top: 10px;
+    padding-right: 100px;
+}
